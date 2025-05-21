@@ -1,7 +1,12 @@
 let nota = 6.5;
 
-if () {
-
+if (nota < 5) {
+    console.log("Reprovado");
+} else if (nota >= 5 && nota < 7) {
+    console.log("Recuperação");
 } else {
-    console.log("Digite um número entre e 10.")
+    console.log("Aprovado");
 }
+
+
+//5 pontos
