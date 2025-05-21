@@ -1,23 +1,28 @@
-let alturaCriança = 1.35;
+let pedido = 1;
+let nomeCombo = "";
+let preco = 0;
 
-let podeMontanhaRussa = false;
-let podeRodaGigante = false;
-let podeBateBate = false;
-
-if (alturaCriança >= 1.5) {
-    podeMontanhaRussa = true;
+switch (pedido) {
+    case 1:
+        nomeCombo = "Batata + Suco";
+        preco = 12;
+        break;
+    case 2:
+        nomeCombo = "Hamburguer";
+        preco = 15;
+        break;
+    case 3:
+        nomeCombo = "Pizza Broto";
+        preco = 20;
+        break;
+    default:
+        console.log("Opção inválida");
+        break;
 }
 
-if (alturaCriança >= 1.2) {
-    podeRodaGigante = true;
+if (nomeCombo != "") {
+    console.log("Combo escolhido: ", nomeCombo);
+    console.log("Preço: ", preco);
 }
-
-if (alturaCriança >= 1.1) {
-    podeBateBate = true;
-}
-
-console.log("Pode brincar na Montanha-russa?", (podeMontanhaRussa ? 'Sim' : 'Não'));
-console.log("Pode brincar na Roda Gigante?", (podeRodaGigante ? 'Sim' : 'Não'));
-console.log("Pode brincar no Carrinho Bate-bate?", (podeBateBate ? 'Sim' : 'Não'));
 
 //10 pontos

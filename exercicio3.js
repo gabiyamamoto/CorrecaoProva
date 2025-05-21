@@ -1,6 +1,6 @@
 let opcao = 1;
 
-switch(opcao) {
+switch (opcao) {
     case 1:
         console.log("Voce escolheu Cadastrar Produto");
         break;
